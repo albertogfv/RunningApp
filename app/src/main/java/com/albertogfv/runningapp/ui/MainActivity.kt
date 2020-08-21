@@ -1,7 +1,8 @@
-package com.albertogfv.runningapp
+package com.albertogfv.runningapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.albertogfv.runningapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
