@@ -74,7 +74,7 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
             cancelTrackingDialog?.setYesListener {
                 stopRun()
             }
-            
+
         }
 
         btnFinishRun.setOnClickListener {
@@ -153,6 +153,7 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking) {
     }
 
     private fun stopRun(){
+        tvTimer.text = "00:00:00"
         sendCommandToService(ACTION_STOP_SERVICE)
         findNavController().navigate(R.id.action_trackingFragment_to_runFragment)
     }
